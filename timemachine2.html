@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>时光机</title>     
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <script> 
+        var dynamicLoading = {
+            css: function(path){
+		        if(!path || path.length === 0){
+			    throw new Error('argument "path" is required !');
+		        }
+		        var head = document.getElementsByTagName('head')[0];
+                var link = document.createElement('link');
+                link.href = path;
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                head.appendChild(link);
+            },
+            js: function(path){
+		        if(!path || path.length === 0){
+			    throw new Error('argument "path" is required !');
+		        }
+		        var head = document.getElementsByTagName('head')[0];
+                var script = document.createElement('script');
+                script.src = path;
+                script.type = 'text/javascript';
+                head.appendChild(script);
+            }  
+        }
+        function browserRedirect() { 
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+                window.location.href="http://mycutie.github.io/timemachine"; 
+            } 
+            else { 
+                dynamicLoading.css("css/mobile.css"); 
+            } }
+        browserRedirect();
+        
+    </script>
+    <body>
+        <div class="main">
+            
+            <!--导航栏-->
+            <div class="top-nav">
+			    <ul>
+				    <li><a href="http://mycutie.github.io">生日快乐！</a></li>
+				    <li><a href="http://mycutie.github.io/timemachine2"><span class="present">时光机</span></a></li>
+				    <li><a href="http://mycutie.github.io/hands">手拉手</a></li>
+				    <li><a href="http://mycutie.github.io/distinction">惜别离</a></li>
+			    </ul>
+		    </div>
+            <div class="back">
+                <img src="images/C02.jpg" alt="" width=100% />
+                <div class="bottom">We walk through the years. <br/>Always holding each others' hands.</div>
+            </div>
+            <div class="timemachine">
+                <div class="machine2">
+                    <div class="img3">
+                        <img src="images/lanyi.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lb1">
+                        <p><span class="bigger">2010.04.17&nbsp;&nbsp;&nbsp;&nbsp;最美好的遇见</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;初春的阳光里，男孩停下单车，走进小店，遇见了坐在椅子上安静的女孩。男孩时常想起这个时刻，他们的第一次问候，第一次注视彼此，他从未感受到如此剧烈的心跳。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;后来，每次路过隔壁班的时候，每次午间操时，每天的放学，眼前她的身影永远在浮现。我想，我无可救药地喜欢上你了。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img3">
+                        <img src="images/biaobai.png" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lb1">
+                        <p><span class="bigger">2010.10.23&nbsp;&nbsp;&nbsp;&nbsp;我喜欢你！</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那个时候，女孩的头像是头像库里的那只精灵猫，男孩便把头像换作那只咧嘴狗。害羞腼腆的男孩，终于鼓起勇气告诉女孩说，“我喜欢你！”。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从小到大，男孩喜欢猫，女孩喜欢狗，而男孩像只狗，女孩像只猫。我想，也许这就是为什么我喜欢你，你喜欢我吧。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img2">
+                        <img src="images/waipo.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lw2">
+                        <p><span class="bigger">2011.03.19&nbsp;&nbsp;&nbsp;&nbsp;第一次约会</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;单车亭后，大雪松树下，女孩牵起男孩的手。那个周末的阳光那样明媚，她的笑容温暖又甜腻。男孩喜欢吃糖，可能因为糖能融化掉灰暗的记忆，但从遇见女孩开始，她的笑是他吃过最甜最甜的糖。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img2">
+                        <img src="images/baiju.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lw2">
+                        <p><span class="bigger">2011.10.12&nbsp;&nbsp;&nbsp;&nbsp;打游戏与白菊</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;放学后男孩和同学翻墙去网吧打游戏，路过人家院子看见白菊盛开，便摘下一枝。晚自习他跑到隔壁班郑重地把白菊给女孩，她看一眼便甩到他身上要揍他，这时他才想起尽管好看但好像送错了。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img2">
+                        <img src="images/star.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lw2">
+                        <p><span class="bigger">2011.12.05&nbsp;&nbsp;&nbsp;&nbsp;银河</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;晚自习课后，男孩与女孩倚在教学楼四层，银河的旋臂挥洒在苍穹之上，遥远的的恒星闪耀着光芒，风与月光碰撞发出叮铃响。人类的存在让这片天空不那么孤独，万年以后，两人的光影仍然会闪烁在宇宙深处。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img2">
+                        <img src="images/break.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lw2">
+                        <p><span class="bigger">2012.11.2&nbsp;&nbsp;&nbsp;&nbsp;破碎与成长</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;男孩做过很多错事，很多很多。在无力的破碎里，在颓唐的烟雾里，他开始懂得珍惜，开始明白生活不是吊儿郎当这么容易。十六岁，十八岁，时光似光般飞过，男孩和女孩渐渐成长。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img2">
+                        <img src="images/lanyi.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lb2">
+                        <p><span class="bigger">2016.08.19&nbsp;&nbsp;&nbsp;&nbsp;夏日晴空</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夏天的晴空里，兰谊小学的红砖青瓦与参天大树明亮清澈。两人的课堂上，男孩翻阅着谁家小孩遗落的《课堂内外》，细细读着狼与小红帽的童话，女孩在男孩的脖子上画着圈圈。世间情动，不过盛夏白瓷梅子汤，破冰碰壁当啷响。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img2">
+                        <img src="images/wintersun.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lb2">
+                        <p><span class="bigger">2017.01.19&nbsp;&nbsp;&nbsp;&nbsp;冬日暖阳</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;女孩外婆家的台阶下，男孩摘下一朵小小的野花送给她。他背着她走过湿软的田埂，她牵着他带他看她记忆里的，已经被草木吞没的老房子。当太阳从山那边沉下，她，外婆和他吃着她做的，世界上最好吃的晚餐。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img2">
+                        <img src="images/waipo.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lb2">
+                        <p><span class="bigger">2017.08.12&nbsp;&nbsp;&nbsp;&nbsp;田野里的燕子纷飞</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;伴着清晨微凉的夏风，他们来到男孩外婆家里。男孩牵着女孩穿过无尽的田野，天空突然阴沉，翠绿的稻田上空，无数燕子纷飞。雨前，他们停下脚步，似乎全世界都只剩下纷飞的燕子，一望无际的稻田，和彼此。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img2">
+                        <img src="images/food.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lw2">
+                        <p><span class="bigger">2017.08.28&nbsp;&nbsp;&nbsp;&nbsp;布衣饭菜，可乐终身。</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;厨房的油烟味飘到了客厅，伴随而来的是热气腾腾的饭菜。桌前，男孩砌上两杯茶，默默等待着午餐。女孩做的菜无比辣，让在北方上学的男孩把煲里的米饭掘得干干净净。粗茶淡饭，桌前对视而笑的二人，和幸福的味道。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img2">
+                        <img src="images/miao.jpg" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lw2">
+                        <p><span class="bigger">2018.01.30&nbsp;&nbsp;&nbsp;&nbsp;炉火和喵子</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;外面是寒冷彻骨的冬，面前是奶奶生的一盆炉火，把男孩和女孩的脸映得火红火红。半年不见的小奶猫已长大好多，喵子第一次见女主人，一点不害怕，蜷到女孩的腿下烤火。</p>
+                    </div>
+                </div>
+                <div class="machine2">
+                    <div class="img3">
+                        <img src="" alt="" width="360" height="240" />
+                    </div>
+                    <div class="words_lw2">
+                        <p><span class="bigger">2018.12.13&nbsp;&nbsp;&nbsp;&nbsp;窝里小仙女生日快乐！</span></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;仙人掌小姐与木芙蓉先生待续的时光机。</p>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                
+                <br/>
+                <br/>
+            </div>
+            
+        </div>
+        
+        
+    </body>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</html>
