@@ -1,0 +1,81 @@
+.words_lw1 {
+    position: absolute;
+    top: 115px;
+    left: 40px;
+    right: 440px;
+    height: 240px;
+    font-size: 22px;
+    color: white;
+    text-align: left;
+    font-family: "Microsoft JhengHei",微软正黑,"SimSun",宋体,"STXihei",华文细黑;
+    line-height: 150%;
+}
+.words_rw1 {
+    position: absolute;
+    top: 115px;
+    left: 440px;
+    right: 40px;
+    height: 240px;
+    font-size: 22px;
+    color: white;
+    text-align: left;
+    font-family: "Microsoft JhengHei",微软正黑,"SimSun",宋体,"STXihei",华文细黑;
+    line-height: 150%;
+}
+.words_lb2 {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    right: 440px;
+    height: 240px;
+    font-size: 22px;
+    color: black;
+    text-align: left;
+    font-family: "Microsoft JhengHei",微软正黑,"SimSun",宋体,"STXihei",华文细黑;
+    line-height: 150%;
+}
+.words_lw2 {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    right: 440px;
+    height: 240px;
+    font-size: 22px;
+    color: white;
+    text-align: left;
+    font-family: "Microsoft JhengHei",微软正黑,"SimSun",宋体,"STXihei",华文细黑;
+    line-height: 150%;
+}
+.words_rb2 {
+    position: absolute;
+    top: 140px;
+    left: 440px;
+    right: 40px;
+    height: 240px;
+    font-size: 22px;
+    color: black;
+    text-align: left;
+    font-family: "Microsoft JhengHei",微软正黑,"SimSun",宋体,"STXihei",华文细黑;
+    line-height: 150%;
+}
+.words_rw2 {
+    position: absolute;
+    top: 140px;
+    left: 440px;
+    right: 40px;
+    height: 240px;
+    font-size: 22px;
+    color: white;
+    text-align: left;
+    font-family: "Microsoft JhengHei",微软正黑,"SimSun",宋体,"STXihei",华文细黑;
+    line-height: 150%;
+}
+
+
+.beijing_hands {
+    position: relative;
+    top: 40px;
+    left: 30%;
+    width: 40%;
+    height: auto;
+}
